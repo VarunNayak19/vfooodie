@@ -1,0 +1,113 @@
+.sliderContainer {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  opacity: 0;
+  transform: scale(85%);
+  transition: 2s;
+}
+.sliderContainerZoom {
+  opacity: 1;
+  transform: scale(100%);
+  transition: 2s;
+}
+.sliderImage {
+  width: 60%;
+}
+.sliderText {
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.sliderTitle {
+  font-size: 3rem;
+}
+.sliderSubtitle {
+  font-size: 1rem;
+  margin-bottom: 30px;
+}
+.recipeButton {
+  width: 70%;
+  height: auto;
+  border: 5px solid black;
+  border-radius: 80px;
+  display: flex;
+  justify-content: flex-start;
+  padding: 5px;
+  transition: 0.5s;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 20px;
+}
+.recipeButton h1 {
+  font-size: 400%;
+  transition: 0.5s;
+}
+.recipeButton:hover {
+  width: 100%;
+  background-color: black;
+  color: white;
+  justify-content: flex-end;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.recipeButton h1:hover {
+  font-size: 400%;
+  transition: 0.9s;
+}
+.linknodec {
+  text-decoration: none;
+  color: black;
+}
+
+.topButton {
+  width: 30%;
+  height: auto;
+  border: 5px solid black;
+  border-radius: 80px;
+  display: flex;
+  justify-content: flex-start;
+  padding: 5px;
+  transition: 0.5s;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.topButton h1 {
+  font-size: 200%;
+  transition: 0.5s;
+}
+.topButton:hover {
+  width: 40%;
+  background-color: black;
+  color: white;
+  justify-content: flex-end;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.topButton h1:hover {
+  font-size: 200%;
+  transition: 0.9s;
+}
+
+@media only screen and (max-width: 768px) {
+  .sliderTitle {
+    font-size: 1.3rem;
+  }
+  .sliderSubtitle {
+    font-size: 0.8rem;
+  }
+  .recipeButton {
+    width: 90%;
+  }
+  .recipeButton h1 {
+    font-size: 100%;
+  }
+  .topButton {
+    width: 90%;
+  }
+  .topButton h1 {
+    font-size: 100%;
+  }
+}
